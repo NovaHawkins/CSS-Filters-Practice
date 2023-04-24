@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters Practice</title>
+
+<style id="Filters1">
+
+body{margin:0;}
+
+.GridContainer1{
+    display:grid;
+    grid-template-columns:auto auto auto;
+    margin-top:35px;
+    row-gap:25px;
+}
+
+.filter{text-align:center;}
+
+.img{width:350px;}
+
+
+#blur0{filter:blur(0);}
+
+
+#blur3px{filter:blur(3px);}
+
+
+#grayscale100per{filter:grayscale(100%);}
+
+
+#brightness0{filter:brightness(0);}
+
+
+#brightness1{filter:brightness(1);}
+
+
+#brightnessoneHalf{filter:brightness(0.5);}
+
+
+#brightness35per{filter:brightness(35%);}
+
+
+#contrast180per{filter:contrast(180%);}
+
+</style>
+
+<style id="Filters2">
+
+.filter2{width:250px;}
+
+#opacity1{filter:opacity(1);}
+
+#opacity2{filter:opacity(0);}
+
+#opacity3{filter:opacity(0.5);}
+
+#saturate{filter:saturate(175%);}
+
+#grayscale{filter:grayscale(100%);}
+
+</style>
+
+</head>
+<body>
+
+<div class="GridContainer1">
+    <div class="filter">
+        <img src="garfunkleBeach.jpeg" class="img" id="blur0">
+        <p class="text">This one has a blur filter of 0</p>
+    </div>
+    <div class="filter">
+        <img src="garfunkleBeach.jpeg" class="img" id="blur3px">
+        <p class="text">This has a blur filter of 3px</p>
+    </div>
+    <div class="filter">
+        <img src="garfunkleBeach.jpeg" class="img" id="grayscale100per">
+        <p class="text">This has a grayscale filter of 100%</p>
+    </div>
+    <div class="filter">
+        <img src="garfunkleBeach.jpeg" class="img" id="brightness0">
+        <p class="text">This has a brightness filter of 0</p>
+    </div>
+    <div class="filter">
+        <img src="garfunkleBeach.jpeg" class="img" id="brightness1">
+        <p class="text">This has a brightness filter of 1</p>
+    </div>
+    <div class="filter">
+        <img src="garfunkleBeach.jpeg" class="img" id="brightnessoneHalf">
+        <p class="text">This has a brightness filter of 0.5</p>
+    </div>
+    <div class="filter">
+        <img src="garfunkleBeach.jpeg" class="img" id="brightness35per">
+        <p class="text">This has a brightness filter of 35%</p>
+    </div>
+    <div class="filter">
+        <img src="garfunkleBeach.jpeg" class="img" id="contrast180per">
+        <p class="text">This has a contrast filter of 180%</p>
+    </div>
+</div>
+
+<div class="GridContainer2">
+
+    <div class="landscape">
+        <img src="landscape.jpeg" class="filter2" id="opacity1">
+    </div>
+    <div class="landscape">
+        <img src="landscape.jpeg" class="filter2" id="opacity2">
+    </div>
+    <div class="landscape">
+        <img src="landscape.jpeg" class="filter2" id="opacity3">
+    </div>
+    <div class="landscape">
+        <img src="landscape.jpeg" class="filter2" id="saturate">
+    </div>
+
+</div>
+
+<div id="GridContainer3">
+
+<img src="Sunset-In-Phoenix.jpeg" id="grayscale" width="500px">
+
+</div>    
+
+
+</body>
+</html>
